@@ -42,7 +42,7 @@ define :measure2measure8 do
   play:Gs4
   sleep 1
 end
-live_loop:background_notes do
+live_loop:drums do
   play:E3, amp: 0.25
   sleep 1
   play:B3, amp: 0.25
@@ -83,7 +83,7 @@ live_loop:background_notes do
   end
   stop
 end
-live_loop:beat do
+live_loop:guitar do
   # Measure 1
   play :r
   sleep 1
@@ -95,7 +95,6 @@ live_loop:beat do
   sleep 1
   # Measure 2
   measure2measure8
-  
   # Measure 3
   measure3measure4measure6
   
@@ -115,6 +114,8 @@ live_loop:beat do
   stop
 end
 live_loop :layer3 do
-  sample:drum_heavy_kick
+  sample:loop_amen
   stop
 end
+
+ 
