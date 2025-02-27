@@ -83,7 +83,93 @@ live_loop :piano_loop do
     stop
   end
 end
+#main disc
+use_bpm 18  # Match the tempo of Runaway
+use_synth :piano  # Pure piano sound
+live_loop :piano_loop do
+  1.times do
+    sleep 1
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:cs5,amp: 0.4
+    sleep 0.5
+  end
+  with_fx :reverb, mix: 0.6, room: 0.9 do
+    
+    sleep 1
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:cs5,amp: 0.4
+    sleep 0.5
+  end
+  with_fx :reverb, mix: 0.6, room: 0.9 do
+    
+    sleep 1
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:cs5,amp: 0.4
+    sleep 0.5
+  end
+  live_loop:pibble do
+    
+    sleep 1
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:e5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:ds5,amp: 0.4
+    sleep 0.5
+    play:cs5,amp: 0.4
+    sleep 0.5
+    stop
+  end
+end
 sleep 5.5
 sample "C:/Users/dorian_barrera/Downloads/Kanye - Father Stretch My Hands pt (mp3cut.net).wav"
-sleep 7.2
+sleep 5.6
+sample :ambi_dark_woosh
 sample "C:/Users/dorian_barrera/Downloads/MY LORD (KANYE WEST CHOP).wav"
