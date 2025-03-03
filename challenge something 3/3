@@ -1,0 +1,9 @@
+use_synth :piano do
+  num=21
+  87.times do
+    play num
+    sleep 0.5
+    num
+    sleep 0.5
+    num = num + 1
+  end
