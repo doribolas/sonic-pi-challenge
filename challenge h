@@ -1,0 +1,86 @@
+use_bpm 120
+use_synth :chiplead
+define:anynotes do |n1,n2|
+  play n1
+  play n2
+  
+  sleep 0.5
+end
+define:dnotes do |d5,d6|
+  play d5
+  play d6
+end
+define:enotes do |e5,e6|
+  play e5
+  play e6
+  sleep 0.5
+end
+define:cnotes do |c4,c5|
+  play c4
+  play c5
+  sleep 0.5
+end
+define:fnotes do |f4,f5|
+  play f4
+  play f5
+  sleep 0.5
+end
+define:bnotes do |b4,b5|
+  play b4
+  play b5
+  sleep 0.5
+end
+# MEASURE 1 ---------------------------
+anynotes:a4,:a5
+
+anynotes:a4,:a5
+
+anynotes:a4,:a5
+
+anynotes:d5,:d6
+
+anynotes:a4,:a5
+
+enotes:e5,:e6
+
+dnotes:d5,:d6
+
+# MEASURE 2 ---------------------------
+
+enotes:e5,:e6
+
+cnotes:c4,:c5
+
+gnotes:g4,:g6
+
+cnotes:c4,:c5
+
+enotes:e5,:e6
+
+cnotes:c4,:c5
+
+# MEASURE 3 ---------------------------
+gnotes:g4,:g6
+
+gnotes:g4,:g6
+
+bnotes:b4,:b5
+
+gnotes:g5,:g6
+
+gnotes:g4,:g6
+
+dnotes:d5,:d6
+
+# MEASURE 4 ---------------------------
+fnotes:f4,:f5
+
+fnotes:f4,:f5
+
+anynotes:a4,:a5
+
+fnotes:f4,:f5
+
+fnotes:f4,:f5
+
+bnotes:b4,:b5
