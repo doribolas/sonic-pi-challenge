@@ -1,0 +1,67 @@
+use_bpm 80
+use_synth :piano
+
+define :twonotes do |n1, n2|
+  play n1, amp: 1.3
+  play n2, amp: 1.3
+  sleep 0.5
+end
+
+define :hax do
+  2.times do
+    play :cs5, amp: 1.4
+    sleep 0.5
+  end
+  2.times do
+    play :c5, amp: 1.3
+    sleep 0.5
+  end
+end
+
+
+
+
+
+
+play :e3, amp: 1.5
+sleep 0.5
+play :g3, amp: 1.3
+sleep 0.5
+play :a3, amp: 1.4
+sleep 0.5
+play :b3, amp: 1.2
+sleep 0.5
+
+play :e4, amp: 1.5
+sleep 0.25
+play :e3, amp: 1.0
+sleep 0.25
+play :g4, amp: 1.4
+sleep 0.25
+play :g3, amp: 1.0
+sleep 0.25
+
+play :a4, amp: 1.3
+sleep 0.25
+play :b3, amp: 1.0
+sleep 0.25
+play :b4, amp: 1.4
+sleep 0.5
+
+play :d5, amp: 1.3
+sleep 0.5
+play :e3, amp: 1.2
+sleep 0.5
+
+twonotes :g3, :g4
+twonotes :a3, :a4
+
+hax
+
+
+sleep 14
+
+sample"C:/Users/dorian_barrera/Downloads/DRUMS_VBV3_cr7_instrument (1).wav", amp: 1.5
+sleep 35
+sample "C:/Users/dorian_barrera/Downloads/pessi (1).wav", amp: 4
+end
